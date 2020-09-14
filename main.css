@@ -1,0 +1,246 @@
+@import url(https://fonts.google.com/specimen/Krona+One);
+
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans&display=swap);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  background-image: url("images/calathea-closeup-background-mobile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  color: #d19c1d;
+}
+
+#categories {
+  width: 0;
+  display: none;
+}
+
+nav {
+  padding: 15px;
+  width: 92%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.openbtn {
+  color: #d19c1d;
+  background: none;
+  border: none;
+}
+
+.openbtn:hover {
+  color: #488c7f;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+}
+
+li {
+  padding-top: 25px;
+}
+
+.nav-header {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #d19c1d;
+}
+
+a:hover {
+  color: #488c7f;
+  cursor: pointer;
+}
+
+.sidebar {
+  font-family: "PT Sans", sans-serif;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #092621;
+  padding-top: 15px;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.categories .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-left: 50px;
+  font-size: x-large;
+}
+
+.fa-times:hover {
+  color: #488c7f;
+}
+
+.main-title {
+  font-family: "krona-one", sans-serif;
+  letter-spacing: 8px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  font-weight: normal;
+}
+
+.title {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-family: "krona-one", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 5px;
+  padding-top: 15px;
+}
+
+.page {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 1450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemContainer {
+  font-family: "PT Sans", sans-serif;
+  background-color: white;
+  border: white solid 4px;
+  color: #2e282a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px;
+  width: 250px;
+  height: auto;
+  text-align: center;
+}
+
+.plant-image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.succulent-page {
+  background-image: url("images/succulents-main.jpg");
+}
+
+.beginner-page {
+  background-image: url("images/easy-plants-main.jpg");
+  height: 1000px;
+}
+
+.pet-page {
+  background-image: url("images/pet-friendly-plant-main.jpg");
+}
+
+.luxury-page {
+  background-image: url("images/fancy-plant-main.jpg");
+  height: 1000px;
+}
+
+.cart-link {
+  font-family: "pt sans", sans-serif;
+  color: #d19c1d;
+}
+
+.cartButton {
+  border-radius: 24px;
+  border: #d19c1d solid 2px;
+  background-color: #d19c1d;
+  color: white;
+  outline: none;
+  font-family: "PT Sans", sans-serif;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #092621;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 96px;
+    letter-spacing: 30px;
+  }
+
+
+  .page {
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+  }
+
+  .title {
+    position: absolute;
+    top: 5px;
+    margin: auto;
+    font-size: 62px;
+    letter-spacing: 10px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .itemContainer {
+    height: 450px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 325px;
+    margin-bottom: 40px;
+  }
+
+  .plant-image {
+    height: 250px;
+    width: 300px;
+    object-fit: contain;
+  }
+
+  nav {
+    width: 97%;
+    padding-top: 20px;
+  }
+
+}
+
+
+}

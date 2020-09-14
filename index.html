@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garden of Eden</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="getAllProducts()" onunload="showCart()">
+    <div id="header" class="main-page">
+      <nav class="top-nav">
+        <button class="openbtn" onclick="openNav()">
+          <i class="fas fa-bars fa-2x openbtn"></i>
+        </button>
+        <a id="cart" class="cart-link" href="./checkout.html">
+          <i class="fas fa-shopping-cart fa-2x"></i>
+        </a>
+      </nav>
+      <ul id="categories" class="categories sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <li class="nav-header"><a href="#header">Garden of Eden</a></li>
+        <li><a href="#succulents-page">Succulents</a></li>
+        <li><a href="#beginner-page">Beginner Friendly</a></li>
+        <li><a href="#pet-page">Pet Friendly</a></li>
+        <li><a href="#luxury-page">Luxury</a></li>
+      </ul>
+      <h1 class="main-title">Garden of Eden</h1>
+    </div>
+    <div class="succulent-page page" id="succulents-page">
+      <h2 class="title">Succulents</h2>
+      <div id="succulents" class="item"></div>
+    </div>
+    <div class="beginner-page page" id="beginner-page">
+      <h2 class="title">Beginner Friendly</h2>
+      <div id="beginnerFriendly" class="item"></div>
+    </div>
+    <div class="pet-page page" id="pet-page">
+      <h2 class="title">Pet Friendly</h2>
+      <div id="petFriendly" class="item"></div>
+    </div>
+    <div class="luxury-page page" id="luxury-page">
+      <h2 class="title luxury-title">Luxury</h2>
+      <div id="luxury" class="item"></div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,66 @@
+@import url(https://fonts.google.com/specimen/Krona+One);
+
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans&display=swap);
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url("images/checkout-background-image-palm.png");
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: "krona-one", sans-serif;
+    letter-spacing: 8px;
+    font-size: 32px;
+    font-weight: normal;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #d19c1d;
+    padding-top: 20px;
+  }
+  
+  a:hover {
+    color: #488c7f;
+    cursor: pointer;
+  }
+
+  #receiptContainer {
+    width: 50%;
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #2e282a;
+    margin-top: 20px;
+  }
+
+  .purchasedItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.money {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

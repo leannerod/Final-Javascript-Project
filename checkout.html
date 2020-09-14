@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Checkout Cart</title>
+
+  <link rel="stylesheet" href="checkout.css" />
+  <script src="main.js"></script>
+</head>
+
+<body onload="fillCart()">
+  <h1>Garden of Eden</h1>
+  <div class="mainContainer">
+    <div id="container1">
+      <h2>Order Summary</h2>
+      <a id="cart" href="./index.html">Continue Shopping</a>
+    </div>
+
+    <div class="paymentChoice">
+      <h2 class="pay-question">How would you like to pay?</h2>
+      <a><button id="creditCardButton" class="creditCardButton btn" onclick="ccSelection()">Credit
+          Card</button></a>
+      <a><button id="cashButton" class="cashButton btn" onclick="cashSelection()">Cash</button></a>
+    </div>
+    <div id="shipBillContainer">
+      <form>
+        <div class="container2">
+          <h2>Shipping</h2>
+
+          <label for="shipName">Full Name </label>
+          <input type="text" id="shipName" placeholder="Clinton M. Johnson">
+          <label for="shipAdd">Shipping Address</label>
+          <input type="text" id="shipAdd" placeholder="1570 Woodward Ave.">
+          <label for="shipCity">City</label>
+          <input type="text" id="shipCity" placeholder="Detroit">
+          <label for="shipState">State</label>
+          <input type="text" id="shipState" placeholder="MI">
+          <label for="shipZip">Zip Code</label>
+          <input type="text" id="shipZip" placeholder="48226">
+        </div>
+        <div class="container3">
+
+          <h2>Billing</h2>
+
+          <label for="billName">Full Name</label>
+          <input type="text" id="billName" placeholder="Clinton M. Johnson">
+          <label for="Email">Email</label>
+          <input type="text" id="Email" placeholder="bootcamps@grandcircus.co">
+          <label for="billAdd">Address</label>
+          <input type="text" id="billAdd" placeholder="1570 Woodward Ave.">
+          <label for="billCity">City</label>
+          <input type="text" id="billCity" placeholder="Detroit">
+          <label for="billState">State</label>
+          <input type="text" id="billState" placeholder="MI">
+          <label for="billZip">Zip Code</label>
+          <input type="text" id="billZip" placeholder="48226">
+
+          <h2>Payment</h2>
+
+          <label for="ccNumber">Credit Card</label>
+          <input type="text" id="ccNumber" placeholder="1111-2222-3333-4444">
+          <label for="expMonth">Expiration Month</label>
+          <input type="text" id="expMonth" placeholder="January">
+          <label for="expYear">Expiration Year</label>
+          <input type="text" id="expYear" placeholder="2015">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" placeholder="123">
+
+          <input type="submit" id="processOrder" class="processOrder1 btn">
+          <!-- <button id="processOrder" class="processOrder1 btn">Process
+            Order</button> -->
+          <!-- <a href="receipt.html" class="processOrder1"></a> -->
+
+      </form>
+    </div>
+  </div>
+  <div id="cashPayment">
+    <div class="cashAmount">Please enter the amount of cash you would like to deposit:</div>
+    <div class="cashInput"></div>
+
+    <input type="number" id="cashInput" placeholder="$20.00">
+    <button onclick="loadAmount()" id="Enter" class="Enter btn">Enter</button>
+    <div class="amountEntered">Amount Entered:
+      <div id="demo"></div>
+    </div>
+    <div class="remainingAmount"><span id="remainingAmountText">Remaining Amount:</span>$ <span
+        id="amountRemaining"></span>
+    </div>
+    <a href="receipt.html" class="processOrder2">
+      <button id="processOrder" class="processOrder2 btn">Process Order</button>
+    </a>
+
+  </div>
+
+</body>
+
+
+</html>
